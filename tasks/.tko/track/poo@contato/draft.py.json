@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-26_13-48-18",
+            "content": "@@ -1,224 +0,0 @@\n-class Fone:%0A    def __init__(self, id: str, number: str):%0A        self.__id=id%0A        self.__number=number%0A%0A    def get_id(self):%0A        return self.__id%0A    %0A    def get_number(self):%0A        %0A        return self.__number\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-26_14-20-22",
+            "content": "@@ -172,32 +172,41 @@\n t_number(self):%0A\n+        %0A\n         return s\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-26_14-20-39",
+            "content": "@@ -106,40 +106,8 @@\n er%0A%0A\n-    def isValid(self) -%3E bool:%0A%0A\n     \n@@ -212,115 +212,4 @@\n mber\n-%0A    %0A    def __str__(self):%0A        return f%22%22%0A    %0Aclass Contact:%0A    def __init__(self, ):%0A        %0A        \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-26_14-27-14",
+            "content": "class Fone:\n    def __init__(self, id: str, number: str):\n        self.__id=id\n        self.__number=number\n\n    def isValid(self) -> bool:\n\n    def get_id(self):\n        return self.__id\n    \n    def get_number(self):\n        return self.__number\n    \n    def __str__(self):\n        return f\"\"\n    \nclass Contact:\n    def __init__(self, ):\n        \n        ",
+            "lines": "20"
+        }
+    ]
+}
