@@ -12,9 +12,14 @@ class Fone:
         return self.__number
     
     def __str__(self):
-        return f""
+        return f"{self.__id}:{self.__number}"
     
 class Contact:
     def __init__(self, ):
         
-        
+    
+
+def main():
+    
+    
+main()

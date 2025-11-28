@@ -17,8 +17,13 @@
         },
         {
             "label": "2025-11-26_14-27-14",
-            "content": "class Fone:\n    def __init__(self, id: str, number: str):\n        self.__id=id\n        self.__number=number\n\n    def isValid(self) -> bool:\n\n    def get_id(self):\n        return self.__id\n    \n    def get_number(self):\n        return self.__number\n    \n    def __str__(self):\n        return f\"\"\n    \nclass Contact:\n    def __init__(self, ):\n        \n        ",
+            "content": "@@ -290,35 +290,8 @@\n n f%22\n-%7Bself.__id%7D:%7Bself.__number%7D\n %22%0A  \n@@ -351,22 +351,8 @@\n     \n-%0A%0Adef main():%0A\n     \n",
             "lines": "20"
+        },
+        {
+            "label": "2025-11-27_02-29-18",
+            "content": "class Fone:\n    def __init__(self, id: str, number: str):\n        self.__id=id\n        self.__number=number\n\n    def isValid(self) -> bool:\n\n    def get_id(self):\n        return self.__id\n    \n    def get_number(self):\n        return self.__number\n    \n    def __str__(self):\n        return f\"{self.__id}:{self.__number}\"\n    \nclass Contact:\n    def __init__(self, ):\n        \n    \n\ndef main():\n    ",
+            "lines": "23"
         }
     ]
 }
