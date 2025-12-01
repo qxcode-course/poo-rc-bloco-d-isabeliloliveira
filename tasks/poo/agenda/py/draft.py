@@ -31,10 +31,15 @@ class Contact:
         print("fail: invalid number")
 
     def rmFone(self, index:int):
-        try:
-            self.__fones.pop(index)
+        # try:
+        #     self.__fones.pop(index)
         
-        except:
+        # except:
+        #     print("fail: indice invalido")
+
+        if 0 <= index < len(self.__fones):
+            self.__fones.pop(index)
+        else:
             print("fail: indice invalido")
 
     def toggleFavorited(self):
@@ -135,13 +140,9 @@ def main():
             else:
                 print("fail: contato nao existe")
 
-        elif args[0]=="fav":
-            name = args[1]
-            contact = agenda.getContact(name)
-            if contact:
-                contact.toggleFavorited()
-            else:
-                print("fail: contato nao existe")
+        elif args[0]=="tfav":
+            agenda.favorite(args[1])
+            
 
         elif args[0]=="search":
             pattern = args[1]
@@ -149,9 +150,14 @@ def main():
             for c in results:
                 print(c)
         
+        elif args[0]=="favs":
+            for c in agenda.getFavorites():
+                print(c)
+
         elif args[0] == "showFav":
             for c in agenda.getFavorites():
                 print(c)
         
+            
 
 main()
